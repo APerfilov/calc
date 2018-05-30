@@ -14,9 +14,10 @@ namespace Calculator
     {
         public Form1()
         {
+            
             InitializeComponent();
         }
-
+        Double ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10;
         private void button1_Click(object sender, EventArgs e)
         {
             string a;
@@ -88,9 +89,12 @@ namespace Calculator
 
         private void point_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + Convert.ToString(",");
+           
+            if (textBox1.Text.IndexOf(',') == -1)
+            {
+                textBox1.Text += ",";
+            }
         }
-
         private void otr_Click(object sender, EventArgs e)
         {
             //Double prov;
@@ -102,6 +106,20 @@ namespace Calculator
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void plus_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            { textBox1.Text = textBox1.Text; } else { textBox1.Text = textBox1.Text + "+"; };
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+           if () 
+           if (textBox1.Text == "0")
+            { textBox1.Text = textBox1.Text; }
+            else { textBox1.Text = textBox1.Text + "-"; };
         }
     }
 }
