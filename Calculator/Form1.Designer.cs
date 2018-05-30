@@ -42,6 +42,10 @@
             this.point = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
             this.otr = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.multiplication = new System.Windows.Forms.Button();
+            this.division = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Sbros
@@ -185,11 +189,51 @@
             this.otr.UseVisualStyleBackColor = true;
             this.otr.Click += new System.EventHandler(this.otr_Click);
             // 
+            // plus
+            // 
+            this.plus.Location = new System.Drawing.Point(269, 50);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(32, 23);
+            this.plus.TabIndex = 14;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            // 
+            // minus
+            // 
+            this.minus.Location = new System.Drawing.Point(269, 79);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(32, 23);
+            this.minus.TabIndex = 15;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            // 
+            // multiplication
+            // 
+            this.multiplication.Location = new System.Drawing.Point(269, 108);
+            this.multiplication.Name = "multiplication";
+            this.multiplication.Size = new System.Drawing.Size(32, 23);
+            this.multiplication.TabIndex = 16;
+            this.multiplication.Text = "*";
+            this.multiplication.UseVisualStyleBackColor = true;
+            // 
+            // division
+            // 
+            this.division.Location = new System.Drawing.Point(269, 140);
+            this.division.Name = "division";
+            this.division.Size = new System.Drawing.Size(32, 23);
+            this.division.TabIndex = 17;
+            this.division.Text = "/";
+            this.division.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.division);
+            this.Controls.Add(this.multiplication);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.plus);
             this.Controls.Add(this.otr);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.point);
@@ -227,6 +271,10 @@
         private System.Windows.Forms.Button point;
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button otr;
+        private System.Windows.Forms.Button plus;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button multiplication;
+        private System.Windows.Forms.Button division;
     }
 }
 
